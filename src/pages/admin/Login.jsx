@@ -25,7 +25,14 @@ const Login = () => {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center bg-light" style={{ minHeight: '100vh' }}>
+    <div className="d-flex align-items-center justify-content-center bg-light position-relative" style={{ minHeight: '100vh' }}>
+      <Link 
+        to="/" 
+        className="btn btn-outline-dark position-absolute top-0 start-0 m-4 rounded-0" 
+        style={{ textTransform: 'uppercase', letterSpacing: '1px', fontSize: '0.8rem', fontWeight: 500 }}
+      >
+        ← Back to Home
+      </Link>
       <div className="card shadow-lg border-0" style={{ width: '100%', maxWidth: '400px' }}>
         <div className="card-body p-5">
           <div className="text-center mb-4">

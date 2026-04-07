@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 // Backend API URL
-const API_URL = 'http://localhost:5000/api';
+const VITE_API_URL = 'https://ak-construction-backend.onrender.com/api';
 
 // Create an instance
 const api = axios.create({
-  baseURL: API_URL,
+  baseURL: VITE_API_URL,
   headers: {
     'Content-Type': 'application/json'
   }

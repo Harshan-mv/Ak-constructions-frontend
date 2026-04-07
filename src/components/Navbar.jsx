@@ -38,6 +38,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`} to="/projects">Projects</Link>
             </li>
+            <li className="nav-item">
+              <Link className={`nav-link ${location.pathname.startsWith('/admin') ? 'active' : ''}`} to="/admin/login">Admin</Link>
+            </li>
           </ul>
           <div className="d-flex">
             <button onClick={handleWhatsAppClick} className="btn btn-gold d-flex align-items-center gap-2">
