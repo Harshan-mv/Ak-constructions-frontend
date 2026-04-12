@@ -39,7 +39,13 @@ const Navbar = () => {
               <Link className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`} to="/projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${location.pathname.startsWith('/admin') ? 'active' : ''}`} to="/admin/login">Admin</Link>
+              <Link 
+                className="nav-link" 
+                to="/admin/login"
+                style={{ opacity: 0, cursor: 'default' }}
+              >
+                Admin
+              </Link>
             </li>
           </ul>
           <div className="d-flex">
